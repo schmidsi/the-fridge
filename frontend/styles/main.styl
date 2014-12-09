@@ -1,0 +1,37 @@
+// http://materializecss.com/
+
+.btn-main
+    position: fixed
+    bottom: 2rem
+    right: 2rem
+
+.grid
+    width: 100%
+
+.item
+    box-sizing: border-box
+    display: inline-block
+    width: 33%
+    border: 1px solid white
+    color: white
+    position: relative
+
+    i
+        font-size: 3rem
+
+    &::before
+        content: ''
+        display: block
+        padding-top: 100%
+
+.item-content
+    top: 0
+    left: 0
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    position: absolute
+    z-index: 1
+    height: 100%
+    width: 100%
