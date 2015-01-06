@@ -17,6 +17,9 @@ app.use '/lib', express.static(__dirname + '/frontend/bower_components')
 app.get '/', (req, res) ->
     return res.render('index')
 
+app.get '/detail', (req, res) ->
+	return res.render('detail', req.query)
+
 if not module.parent
     app.listen app.get('port')
     console.log '\n' + 'Server started and listening on port:' + app.get('port')

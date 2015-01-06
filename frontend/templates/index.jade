@@ -4,12 +4,13 @@ html
         meta(charset='utf-8')
         meta(name='viewport', content='width=device-width, initial-scale=1, user-scalable=no')
         link(type="text/css" rel="stylesheet" href="/lib/materialize/bin/materialize.css"  media="screen,projection")
+        link(type="text/css" rel="stylesheet" href="/font/flaticon.css"  media="screen,projection")
         link(rel='stylesheet', type='text/css', href='css/main.css')
         title Hello world
 
     body
         nav
-            .nav-wrapper
+            .nav-wrapper.blue-grey.darken-4
                 a.brand-logo(href='#') The Fridge
                 //ul#nav-mobile.right.side-nav
                   li
@@ -21,15 +22,71 @@ html
                 //a.button-collapse(href='#', data-activates='nav-mobile')
                   i.mdi-navigation-menu
 
-        .grid
-            each val in [1, 2, 3, 4, 5, 6, 7, 8, 9]
-                .item.red.darken-1
+        block main
+            .grid
+                //each val in [1, 2, 3, 4, 5, 6, 7, 8, 9]
+                    .item.red.darken-1
+                        .item-content
+                            h5 Food
+                            i.mdi-maps-restaurant-menu
+                a.item.red.darken-1(href="/Detail?item=Tomate&icon=tomato1")
                     .item-content
-                        h5 Food
-                        i.mdi-maps-restaurant-menu
+                        h5.item-title Tomate
+                        i.flaticon-tomato1
+                a.item.red.darken-1(href="/Detail?item=Poulet&icon=chicken4")
+                    .item-content
+                        h5.item-title Poulet
+                        i.flaticon-chicken4
+                a.item.orange.darken-1(href="/Detail?item=Avocado&icon=avocado")
+                    .item-content
+                        h5.item-title Avocado
+                        i.flaticon-avocado
+                a.item.orange.darken-1(href="/Detail?item=Fisch&icon=fish9")
+                    .item-content
+                        h5.item-title Fisch
+                        i.flaticon-fish9
+                a.item.orange.darken-1(href="/Detail?item=Käse&icon=cheese2")
+                    .item-content
+                        h5.item-title Käse
+                        i.flaticon-cheese2
+                a.item.light-green.darken-1(href="/Detail?item=Milch&icon=milk4")
+                    .item-content
+                        h5.item-title Milch
+                        i.flaticon-milk4
+                a.item.light-green.darken-1(href="/Detail?item=Steak&icon=meat3")
+                    .item-content
+                        h5.item-title Steak
+                        i.flaticon-meat3
+                a.item.light-green.darken-1(href="/Detail?item=Zwiebel&icon=onion1")
+                    .item-content
+                        h5.item-title Zwiebel
+                        i.flaticon-onion1
+                a.item.light-green.darken-1(href="/Detail?item=Aubergine&icon=eggplant1")
+                    .item-content
+                        h5.item-title Aubergine
+                        i.flaticon-eggplant1
 
-        a.btn-floating.btn-main
-            i.mdi-navigation-menu
+                h2.category-title.grey.darken-2 Früchte / Gemüse
+
+                a.item.red.darken-1(href="/Detail?item=Tomate&icon=tomato1")
+                    .item-content
+                        h5.item-title Tomate
+                        i.flaticon-tomato1
+                a.item.orange.darken-1(href="/Detail?item=Avocado&icon=avocado")
+                    .item-content
+                        h5.item-title Avocado
+                        i.flaticon-avocado
+                a.item.light-green.darken-1(href="/Detail?item=Zwiebel&icon=onion1")
+                    .item-content
+                        h5.item-title Zwiebel
+                        i.flaticon-onion1
+                a.item.light-green.darken-1(href="/Detail?item=Aubergine&icon=eggplant1")
+                    .item-content
+                        h5.item-title Aubergine
+                        i.flaticon-eggplant1
+
+            a.btn-floating.btn-main
+                i.mdi-navigation-menu
 
 
         script(type='text/javascript', src='https://code.jquery.com/jquery-2.1.1.min.js')
