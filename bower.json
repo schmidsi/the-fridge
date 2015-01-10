@@ -1,5 +1,19 @@
 {
-  "name": "package",
+  "name": "frontend",
   "version": "0.0.0",
-  "dependencies": {}
+  "authors": [
+    "Simon Schmid <simon@schmidsi.ch>"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "materialize": "*"
+  }
 }
