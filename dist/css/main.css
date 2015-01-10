@@ -4,7 +4,9 @@
   right: 2rem;
 }
 .grid {
+  max-width: 400px;
   width: 100%;
+  margin: 0 auto;
 }
 .item {
   box-sizing: border-box;
@@ -37,6 +39,7 @@
 }
 .item-title {
   font-weight: 200;
+  font-size: 1.2rem;
 }
 .category-title {
   font-size: 1.5rem;
@@ -45,4 +48,27 @@
   margin: 0;
   width: 100%;
   text-align: center;
+}
+.hero {
+  color: #fff;
+  text-align: center;
+  font-size: 5rem;
+}
+.hero i {
+  margin-left: -2.5rem;
+}
+.detail-desc {
+  font-size: 1.5rem;
+  padding: 0 1rem;
+}
+.detail-desc li {
+  padding: 0.1rem 0.5rem;
+}
+.share-button {
+  width: 100%;
+  margin-top: 2rem;
+}
+.iconnav {
+  position: relative;
+  z-index: 1;
 }

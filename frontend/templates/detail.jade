@@ -1,5 +1,25 @@
 extends index
 
+block nav
+    ul.left.iconnav
+        li
+            a(href='/')
+                i.mdi-hardware-keyboard-arrow-left.small
+
+    a.brand-logo(href='#')
+        =item
+
 block main
-	h1= item
-	i(class="flaticon-#{ icon }")
+    .hero.red.darken-1
+        i(class="flaticon-#{ icon }")
+
+    .detail-desc
+        ul.facts
+            li 10 Stück
+            li Fällig in  3 Tagen
+            li Gekauft am 10.1.2015
+            li Nährwert: 10kcal
+            li.green.accent-1 Alergikerinfo: Keine
+
+        a.waves-effect.waves-light.btn-large.share-button(href='/?share=#{item}')
+            i.mdi-social-group  freigeben

@@ -11,16 +11,9 @@ html
     body
         nav
             .nav-wrapper.blue-grey.darken-4
-                a.brand-logo(href='#') The Fridge
-                //ul#nav-mobile.right.side-nav
-                  li
-                    a(href='sass.html') Sass
-                  li
-                    a(href='components.html') Components
-                  li
-                    a(href='javascript.html') JavaScript
-                //a.button-collapse(href='#', data-activates='nav-mobile')
-                  i.mdi-navigation-menu
+                block nav
+                    a.brand-logo(href='#')
+                        | The Fridge
 
         block main
             .grid
