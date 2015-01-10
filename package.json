@@ -32,6 +32,7 @@
     "vinyl-source-stream": "^1.0.0"
   },
   "scripts": {
-    "start": "coffee server.coffee"
+    "start": "coffee server.coffee",
+    "postinstall": "./node_modules/bower/bin/bower install"
   }
 }
